@@ -35,8 +35,8 @@ jobs:
           echo "AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }}" >> $GITHUB_ENV
           echo "AWS_SECRET_ACCESS_KEY=${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> $GITHUB_ENV
 
-      # - name: Run unit tests
-      #   run: python -m unittest test_lambda.py
+      - name: Run unit tests
+        run: python -m unittest test_lambda.py
       - name: Run tox
         run: tox -e py
       - name: SonarCloud Scan
