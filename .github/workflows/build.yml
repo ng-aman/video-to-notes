@@ -48,7 +48,7 @@ jobs:
   deploy_lambda:
     name: Deploy to Lambda
     runs-on: ubuntu-latest
-    needs: pytest
+    needs: sonarcloud
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
