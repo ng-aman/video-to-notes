@@ -11,7 +11,6 @@ load_dotenv()
 # Set up logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-print("entered")
 def initialize_s3_client():
     """
     Initialize the S3 client.
